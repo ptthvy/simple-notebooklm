@@ -44,7 +44,6 @@
 - [🧪 Kiểm thử](#-kiểm-thử)
 - [📁 Cấu trúc project](#-cấu-trúc-project)
 - [⚠️ Lưu ý kỹ thuật](#️-lưu-ý-kỹ-thuật)
-- [👩🏻‍💻 Thành viên](#-thành-viên)
 - [🤍 AI Assistance](#-ai-assistance)
 
 ---
