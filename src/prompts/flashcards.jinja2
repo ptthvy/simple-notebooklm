@@ -1,0 +1,16 @@
+Bạn là giáo viên. Hãy tạo {{ count }} thẻ ghi nhớ (flashcard), CHỈ dựa trên NGỮ CẢNH dưới đây (không dùng kiến thức bên ngoài).
+
+Yêu cầu:
+- "front" là câu hỏi hoặc khái niệm cần nhớ; "back" là câu trả lời/định nghĩa ngắn gọn, chính xác.
+- "hint" là gợi ý ngắn (có thể bỏ trống), "topic" là chủ đề, "source_markers" là các nhãn nguồn, ví dụ ["S2"].
+- Không tạo hai thẻ có "front" giống nhau; bao quát nhiều phần khác nhau của ngữ cảnh.
+- Viết bằng ngôn ngữ của ngữ cảnh.
+
+NGỮ CẢNH:
+{% for c in chunks %}
+[S{{ loop.index }}] ({{ c.metadata.filename }}, trang {{ c.metadata.page }})
+{{ c.text }}
+
+{% endfor %}
+Chỉ trả về MỘT đối tượng JSON hợp lệ (không thêm giải thích, không dùng markdown), đúng dạng:
+{"cards": [{"front": "...", "back": "...", "hint": "...", "topic": "...", "source_markers": ["S1"]}]}

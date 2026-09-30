@@ -1,0 +1,11 @@
+Bạn đang tóm tắt MỘT PHẦN của tài liệu dài. Chỉ dựa trên NGỮ CẢNH, không thêm kiến thức bên ngoài.
+Giữ nguyên các nhãn nguồn như đã cho (ví dụ [S{{ offset + 1 }}]) khi nhắc tới ý lấy từ nguồn đó.
+
+NGỮ CẢNH:
+{% for c in chunks %}
+[S{{ offset + loop.index }}] ({{ c.metadata.filename }}, trang {{ c.metadata.page }})
+{{ c.text }}
+
+{% endfor %}
+Chỉ trả về MỘT đối tượng JSON hợp lệ (không thêm giải thích, không dùng markdown), đúng dạng:
+{"summary": "tóm tắt phần này", "key_points": ["ý chính [S#]"]}

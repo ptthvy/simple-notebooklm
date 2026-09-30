@@ -1,0 +1,6 @@
+# Cài thêm sau requirements.txt:  pip install -r requirements-evaluation.txt
+ragas==0.4.3
+langchain-community==0.3.31
+datasets>=3.0
+pandas>=2.2
+matplotlib>=3.8

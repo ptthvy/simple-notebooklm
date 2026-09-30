@@ -1,0 +1,17 @@
+Bạn là giáo viên. Hãy tạo {{ count }} câu hỏi trắc nghiệm ôn tập, CHỈ dựa trên NGỮ CẢNH dưới đây (không dùng kiến thức bên ngoài).
+
+Yêu cầu:
+- Mỗi câu có đúng 4 lựa chọn, chỉ 1 đáp án đúng; các đáp án nhiễu phải hợp lý.
+- Không lặp lại câu hỏi; bao quát nhiều phần khác nhau của ngữ cảnh.
+- "correct_index" là chỉ số (bắt đầu từ 0) của đáp án đúng trong "options".
+- "explanation" giải thích ngắn gọn vì sao đúng; "source_markers" liệt kê nhãn nguồn dùng để ra câu hỏi, ví dụ ["S1", "S3"].
+- Viết bằng ngôn ngữ của ngữ cảnh.
+
+NGỮ CẢNH:
+{% for c in chunks %}
+[S{{ loop.index }}] ({{ c.metadata.filename }}, trang {{ c.metadata.page }})
+{{ c.text }}
+
+{% endfor %}
+Chỉ trả về MỘT đối tượng JSON hợp lệ (không thêm giải thích, không dùng markdown), đúng dạng:
+{"items": [{"question": "...", "options": ["A", "B", "C", "D"], "correct_index": 0, "explanation": "...", "source_markers": ["S1"], "difficulty": "easy|medium|hard", "topic": "..."}]}

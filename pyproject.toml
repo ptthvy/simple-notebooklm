@@ -1,0 +1,10 @@
+[project]
+name = "simple-notebooklm"
+version = "0.1.0"
+description = "Simple NotebookLM: RAG học tập trên PDF cá nhân (Qdrant + LLM), có đánh giá Ragas"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::UserWarning"]

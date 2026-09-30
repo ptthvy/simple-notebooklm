@@ -1,0 +1,13 @@
+Dưới đây là các bản tóm tắt thành phần của cùng một tài liệu. Hãy tổng hợp chúng thành MỘT bản tóm tắt cuối cùng, mạch lạc, không lặp ý.
+Chỉ dùng thông tin có trong các bản tóm tắt thành phần và giữ nguyên các nhãn nguồn [S#].
+
+{% for p in partials %}
+--- Phần {{ loop.index }} ---
+{{ p.summary }}
+{% for kp in p.key_points %}
+- {{ kp }}
+{% endfor %}
+
+{% endfor %}
+Chỉ trả về MỘT đối tượng JSON hợp lệ (không thêm giải thích, không dùng markdown), đúng dạng:
+{"summary": "bản tóm tắt tổng hợp", "key_points": ["ý chính [S#]"]}
