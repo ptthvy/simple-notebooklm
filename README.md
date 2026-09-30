@@ -146,7 +146,7 @@ Xuất nội dung học tập ra **Markdown / JSON**.
 ### ✦ Hỏi đáp RAG có trích dẫn
 
 <p align="center">
-  <img src="assets/screenshots/rag-answer.png" width="88%" alt="RAG answer"/>
+  <img src="r"/>
 </p>
 
 <p align="center"><i>Trả lời câu hỏi dựa trên tài liệu và hiển thị nguồn tham chiếu.</i></p>
@@ -156,7 +156,7 @@ Xuất nội dung học tập ra **Markdown / JSON**.
 ### ✦ Tóm tắt tài liệu
 
 <p align="center">
-  <img src="assets/screenshots/summary.png" width="88%" alt="Summary"/>
+  <img src=""/>
 </p>
 
 <p align="center"><i>Tổng hợp các ý chính từ PDF theo một bố cục dễ đọc.</i></p>
@@ -166,7 +166,7 @@ Xuất nội dung học tập ra **Markdown / JSON**.
 ### ✦ Quiz Generator
 
 <p align="center">
-  <img src="assets/screenshots/quiz.png" width="88%" alt="Quiz"/>
+  <img src=/>
 </p>
 
 <p align="center"><i>Tự động tạo câu hỏi trắc nghiệm từ nội dung học tập.</i></p>
@@ -176,7 +176,7 @@ Xuất nội dung học tập ra **Markdown / JSON**.
 ### ✦ Flashcards
 
 <p align="center">
-  <img src="assets/screenshots/flashcards.png" width="88%" alt="Flashcards"/>
+  <img src=""/>
 </p>
 
 <p align="center"><i>Biến kiến thức trong tài liệu thành thẻ ghi nhớ nhanh.</i></p>
@@ -756,19 +756,6 @@ Qwen/Qwen3-4B-Instruct-2507
 ```
 
 </details>
-
----
-
-# 👩🏻‍💻 Thành viên
-
-<div align="center">
-
-### ✦ Nhóm phát triển ✦
-
-**Nguyễn Văn An** — `24100254`  
-**Đào Bá Tuấn Ngọc** — `24100498`  
-**Phạm Thế Duy** — `24100583`  
-**Phạm Thảo Hiền Vy** — `24100439`
 
 </div>
 
